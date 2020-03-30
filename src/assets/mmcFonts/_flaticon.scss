@@ -1,0 +1,54 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 15/03/2020 11:16
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-globe:before { content: "\f100"; }
+.flaticon-tag:before { content: "\f101"; }
+.flaticon-price:before { content: "\f102"; }
+.flaticon-tag-1:before { content: "\f103"; }
+.flaticon-price-1:before { content: "\f104"; }
+.flaticon-box:before { content: "\f105"; }
+.flaticon-india:before { content: "\f106"; }
+    
+    $font-Flaticon-globe: "\f100";
+    $font-Flaticon-tag: "\f101";
+    $font-Flaticon-price: "\f102";
+    $font-Flaticon-tag-1: "\f103";
+    $font-Flaticon-price-1: "\f104";
+    $font-Flaticon-box: "\f105";
+    $font-Flaticon-india: "\f106";

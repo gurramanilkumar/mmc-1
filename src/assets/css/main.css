@@ -1,0 +1,364 @@
+@import url("fonts/stylesheet.css");
+@import url("my-icons-collection/font/flaticon.css");
+html {
+    background-color: rgb(72, 73, 68);
+}
+
+body {
+    font-family: "GTWalsheimProRegular" !important;
+}
+
+.navbar {
+    padding: 0px;
+    margin: 0px;
+    background-color: #fff !important;
+    border-bottom: 1px solid #3a3b36;
+}
+
+.navbar-nav {
+    margin-top: 45px;
+    margin-left: 35px;
+}
+
+.navbar-brand {
+    margin: 0px;
+    padding: 0px;
+    background-size: 90%;
+    width: 300px;
+    height: 85px;
+    background-image: url(../images/logo.JPG);
+    display: block;
+    background-repeat: no-repeat;
+    margin-left: 15px;
+}
+
+.nav-link {
+    text-transform: uppercase;
+}
+
+.slide1 {
+    right: 10px;
+    left: 30%;
+    z-index: 10;
+    bottom: 0;
+}
+
+header {
+    position: fixed;
+    z-index: 1030;
+    width: 100%;
+    top: 0px;
+}
+
+.carousel-caption>h1 {
+    font-size: 20px;
+}
+
+@media (min-width: 992px) {
+    body {
+        margin: 0px auto;
+    }
+    .carousel-caption>h1 {
+        font-size: 2.5rem;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+    .navbar-light .navbar-nav .active>.nav-link,
+    .navbar-light .navbar-nav .nav-link.active,
+    .navbar-light .navbar-nav .nav-link.show,
+    .navbar-light .navbar-nav .show>.nav-link {
+        color: #fff;
+        border-radius: 4px 4px 0px 0px;
+        background-color: #59b5c1;
+        /* background-color: #3a3b36; */
+    }
+    .slide1 {
+        right: 20px;
+        left: 30%;
+        z-index: 10;
+        bottom: 25%;
+        padding-right: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        width: 80%;
+        margin: 0px auto;
+    }
+    header {
+        width: 80%;
+    }
+}
+
+.m-t-30px {
+    margin-top: 30px;
+}
+
+.rounded-circle {
+    border: 2px solid #59b5c1;
+    width: 175px;
+    height: 175px;
+}
+
+.carousel {
+    margin-top: 85px;
+}
+
+.carousel-inner {
+    /* max-height: 300px; */
+    border-bottom: 1px solid rgba(89, 181, 193, .2);
+}
+
+footer {
+    background: #f3f3f3;
+    min-height: 60px;
+    /* height: 60px; */
+    line-height: 60px;
+}
+
+.carousel-captionBlk {
+    color: #000;
+}
+
+.carousel-captionWht {
+    color: #fff;
+}
+
+.bgPach {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.screenTitle {
+    background-color: #3a3b36;
+    text-transform: capitalize;
+    font-size: 25px;
+    /* line-height: 40px; */
+    color: #fff;
+    padding: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 150px;
+    margin-top: 85px;
+}
+
+.container.marketing {
+    background-color: rgba(235, 236, 236, 0.1);
+    padding-top: 20px;
+}
+
+.runningText>p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding: 0px 0px;
+}
+
+.aboutusBg {
+    background-image: url(../images/aboutUsBg.jpg);
+}
+
+.QualityBg {
+    background-image: url(../images/Quality.jpg);
+}
+
+.ProductsBg {
+    background-image: url(../images/Products.jpg);
+}
+
+.contactUsBg {
+    background-image: url(../images/contactUs.jpg);
+}
+
+.rndBg {
+    background-image: url(../images/rndBK.jpg);
+}
+
+.marketingBg {
+    background-image: url(../images/marketing.jpg);
+}
+
+.strategyBg {
+    background-image: url(../images/STRATEGY.jpg);
+}
+
+.ulTitle {
+    text-transform: capitalize;
+    font-size: 16px;
+    padding-left: 20px;
+    margin-bottom: -10px;
+    font-weight: 600;
+}
+
+table.productTable {
+    width: 100%;
+    border: 2px solid #f1f1f1;
+}
+
+table.productTable>tbody>tr>th {
+    background-color: #f7f4f4;
+    padding: 10px;
+    text-transform: capitalize;
+    font-size: 20px;
+    width: 50%;
+}
+
+table.productTable>tbody>tr>td {
+    padding: 10px;
+    border: 1px solid #f1f1f1;
+    width: 50%;
+}
+
+.linkForLi {
+    color: #59b5c1;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.linkForLi:hover {
+    text-decoration: underline;
+}
+
+.top {
+    position: fixed;
+    bottom: 60px;
+    text-align: right;
+    width: inherit;
+    padding: 10px;
+    display: inline-block;
+    right: 0px;
+    width: 60px;
+}
+
+.topText {
+    background-color: #3a3b36;
+    padding: 5px;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.topText a {
+    color: #fff;
+    text-transform: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .top {
+        right: 10%;
+    }
+}
+
+
+/* Icons*/
+
+.rnd {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.rnd.flaticon-lab-1::before,
+.rnd.flaticon-branch::before,
+.rnd.flaticon-shout::before,
+.rnd.flaticon-idea::before {
+    margin: 0px;
+    font-size: 50px;
+    background-color: #64c9e7;
+    padding: 20px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    outline: none;
+    color: #fff;
+}
+
+
+/* .flaticon-lab-1:before {
+    color: #fff !important;
+    border-color: #fff !important;
+    background-color: #e96829 !important;
+}
+
+.flaticon-shout:before {
+    color: #fff !important;
+    border-color: #fff !important;
+    background-color: #5dc292 !important;
+} */
+
+.p-0px {
+    padding: 0px;
+}
+
+.p-l-35px {
+    padding-left: 35px;
+}
+
+.m-0px {
+    margin: 0px;
+}
+
+.m-m-t-8px {
+    margin-top: -8px;
+}
+
+.rnd-img {
+    background-color: #f1efef;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+.footerLinks {
+    background-color: rgba(0, 0, 0, .1);
+    color: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footerAlinks {
+    /* padding: 0px;
+    line-height: 40px;
+    color: #000; */
+    padding: 0px;
+    line-height: 28px;
+    color: #000;
+    text-transform: capitalize;
+}
+
+.footer>.container {
+    background: #000;
+}
+
+.footer>.container.p-0px {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.marketingTitle {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.carousel-indicators li {
+    position: relative;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 30px;
+    height: 3px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #b9cdd0;
+}
+
+.carousel-indicators .active {
+    background-color: #451611;
+}
+
+.scoate-color {
+    color: #59b5c1;
+}
+
+.bg-scoate {
+    background-color: #59b5c1;
+}

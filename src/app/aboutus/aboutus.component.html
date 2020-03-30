@@ -1,0 +1,222 @@
+<section class="info-section bg-lightPick ">
+    <div class="container">
+        <div class="head-box mb-5">
+            <h3 class="pageTitle">About Us</h3>
+        </div>
+        <div class="three-panel-block  mb-5">
+            <div class="row">
+                <div class=" col-md-12 font-size3rem pageMain-Text">
+                    Quality driven Pharmaceutical, Neutraceutical and Cosmetics group with a Mission to lead the society towards the healthier domain with over three decades and three generations of Experience and Expertise.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="info-section bg-white">
+    <div class="container">
+        <div class="head-box text-center mb-1">
+            <h2 class="text-underline-primary">Innovation with Tradition</h2>
+            <!-- <h6 >This is information panel</h6> -->
+        </div>
+        <div class="three-panel-block mt-4">
+            <div class="row">
+                <figure class="snip0057 red" *ngFor="let innovation of Tradition">
+                    <figcaption>
+                        <h2>{{innovation.title1}} <span>{{innovation.title2}}</span></h2>
+                        <p>{{innovation.text}}</p>
+                        <div class="icons"><a href="#"><i class="ion-ios-home"></i></a><a href="#"><i class="ion-ios-email"></i></a><a href="#"><i class="ion-ios-telephone"></i></a></div>
+                    </figcaption>
+                    <div class="image"><img src="../assets/images/{{innovation.image}}" alt="Our Vision" /></div>
+                    <div class="position"> </div>
+                </figure>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="info-section bg-lightPick">
+    <div class="container">
+        <div class="head-box text-center mb-1">
+            <!-- <h2 class="">Board of Directors</h2> -->
+            <h2 class="">Management</h2>
+
+            <h6 class="text-underline-primary">Highly qualified Technocrat Entrepreneurs with clear and focused Vision</h6>
+        </div>
+        <!-- <div class="three-panel-block mt-4">
+            <div class="row">
+                <div class=" col-lg-2 col-md-4 col-sm-6 " *ngFor="let director of directorGroup">
+                    <div class="card borderNone bg-transparent" data-toggle="modal" [attr.data-target]="'#' + director.profile">
+                        <img class="card-img-top profileimg " src="../assets/images/{{director.pic}}" alt="Our Vision">
+                        <div class="card-body text-center">
+                            <h3 class="" style="font-size: 1rem;">{{director.name}} </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="container mt-40">
+            <div class="row mt-30">
+                <div class=" col-lg-2 col-md-4 col-sm-6 " *ngFor="let director of directorGroup">
+                    <div class="card borderNone bg-transparent box8" data-toggle="modal" [attr.data-target]="'#' + director.profile">
+                        <img class="card-img-top profileimg " src="../assets/images/{{director.pic}}" alt="Our Vision">
+                        <!-- <img src="http://bestjquery.com/tutorial/hover-effect/demo148/images/img-1.jpg"> -->
+                        <div class="card-body text-center">
+                            <h3 class="" style="font-size: 1rem; margin-bottom: 3px;text-transform: uppercase;">{{director.surname}} </h3>
+                            <h3 class="" style="font-size: 1rem; margin-bottom: 3px;text-transform: uppercase;">{{director.name}} </h3>
+                            <h4 class="" style="font-size: .8rem;">{{director.roll}} </h4>
+                        </div>
+                        <div class="box-content">
+                            <ul class="icon">
+                                <li><a data-toggle="modal" [attr.data-target]="'#' + director.profile"><i class="fa fa-link"></i> </a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- Modal -->
+<!-- <div class="modal fade" *ngFor="let director of directorGroup" #elem [id]="director.profilePopup" tabindex="-1" role="dialog" [attr.aria-labelledby]="director.profilePopup" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">{{director.modelTitle}}</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<div class="modal fade" *ngFor="let director of directorGroup" #elem [id]="director.profilePopup" tabindex="-1" role="dialog" [attr.aria-labelledby]="director.profilePopup" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content profileModal user_card">
+            <div class="modal-header">
+                <!-- <h5 class="modal-title" id="exampleModalLongTitle">{{director.modelTitle}}</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span></button> -->
+                <div class="container">
+                    <div class="d-flex justify-content-center">
+                        <div class="d-flex justify-content-center">
+                            <div class="brand_logo_container">
+                                <img class="card-img-top profileimg " src="../assets/images/{{director.pic}}" class="brand_logo" alt="Profile">
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span></button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body row">
+                <h3 class="name col-md-12 text-underlineWite-primary text-white">{{director.name}} </h3>
+                <div class="container col-md-6 mb-3 mt-3">
+                    <h5 class="bgbdr">{{director.eq}}</h5>
+                    <div class="pl-15px" *ngFor="let educational of director.educationals"><span class="text-bold">{{educational.Qualificationstitle}} </span><span> {{educational.Qualifications}}</span></div>
+                </div>
+                <div class="container col-md-6 mb-3 mt-3">
+                    <h5 class="bgbdr">{{director.Designations}}</h5>
+                    <div class="pl-15px" *ngFor="let Designations of director.Designationsdts"><span class="text-bold">{{Designations.Designationsdtstitle}} </span><span> {{Designations.DesignationsdtsText}}</span></div>
+                </div>
+                <div class="container col-md-6 mb-3 mt-3">
+                    <h5 class="bgbdr">{{director.Interests}}</h5>
+                    <div class="pl-15px" *ngFor="let Interests of director.Interestsdts"><span class="text-bold">{{Interests.Interestsdtstitle}} </span><span> {{Interests.InterestsdtsText}}</span></div>
+                </div>
+                <div class="container col-md-6 mb-3 mt-3">
+                    <h5 class="bgbdr">{{director.Memberships}}</h5>
+                    <div class="pl-15px" *ngFor="let Memberships of director.Membershipsdts"><span class="text-bold">{{Memberships.Membershipsdtstitle}} </span><span> {{Memberships.MembershipsdtsText}}</span></div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<section class="info-section bg-primary  ">
+    <div class="container">
+        <div class="three-panel-block mb-5">
+            <div class="row">
+                <div class="col-md-4  m-0 ">
+                    <img src="../assets/images/Sunil-SurakshaPharma-2-1365x2048.jpg" style="border-radius: 30px 0px;" class="img-fluid pad1rem bg-white">
+                </div>
+                <div class=" col-md-8 mt-1 text-white">
+                    <h2> Message from MD</h2>
+                    <p class="p-text-board"><strong> MMC Healthcare </strong> has the Largest and Diverse product basket of 2000+ different Formulations covering Pharmaceutical, Nutraceutical, Cosmetics with fully integrated Manufacturing Facility followed under stringent in-house
+                        and Global Audit specifications.
+                    </p>
+                    <p class="p-text-board">As a case of backward integration and to maintain the Quality Standards, we have set up our own Foil Printing Unit, Pellet Manufacturing Unit and Analytical Research and Testing Lab.
+                    </p>
+                    <p class="p-text-board"><strong> MMC Healthcare </strong> keeps on adding Global Clients, New Products, New Boundaries, New Divisions, regularly which speaks of volumes of our long term vision.
+                    </p>
+                    <h3>
+                        <div><strong class="mb-2">
+                        Dr M. Nageswara Rao Gupta M.Pharm, PhD</strong></div>
+                    </h3>
+                    <div>
+                        <h5> Managing Director </h5>
+                    </div>
+                </div>
+                <div class="col-md-6  m-0  mt-5">
+                    <img src="../assets/images/Suraksha_BoardofDirectors-2-1536x898.jpg" class="img-fluid pad1rem bg-white">
+                    <div class=" col-md-12 cardbtm">
+                        <h2> Advisors/Mentors</h2>
+                        <p class="p-text-board">Our Advisors & Mentors come from diverse fields of expertise who steer us in achieving our goals and help us perform extraordinarily.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6  m-0 mt-5">
+                    <img src="../assets/images/SurakshaPharma-team-2-1536x1024.jpg" class="img-fluid pad1rem bg-white">
+                    <div class=" col-md-12 cardbtm">
+                        <h2> Team Suraksha</h2>
+                        <p class="p-text-board">One team One Dream</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section class=" info-section bg-white item-sxs light  scroll">
+    <div class="container">
+        <div class="row ">
+            <div class="d-flex col-12 col-lg-6 content-col py-lg-0 cr">
+                <div class="content align-self-center">
+                    <h2 class="text-center" style="text-transform: capitalize;line-height: 3.3rem;">Accreditations and memberships</h2>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 item-col pl-lg-4">
+                <div class="items row pb-4">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-xs-6 col-md-6 text-center" *ngFor="let Accreditations of AccreditationsGroup">
+                                        <img src="../../assets/images/accreditationsmembershipslogos/{{Accreditations.imageLogo}}" width="100%" alt="bootsnipp" class="img-rounded img-responsive imgBorder" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>

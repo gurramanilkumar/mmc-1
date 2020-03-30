@@ -1,0 +1,26 @@
+.dropdown-menu {
+    color: #fff !important;
+    background-color: #77326d;
+    border-radius: 0px;
+    padding: 10px;
+    margin-left: -1px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media only screen and (min-width:768) and (max-widht:1024) {
+    .top-nav .navbar-nav li .nav-link {
+        color: #000;
+        font-size: 14px;
+        padding: 10px;
+        white-space: nowrap;
+        font-weight: 600;
+        text-transform: uppercase;
+        transition: 0.5s ease-in;
+        -webkit-transition: 0.5s ease-in;
+        -moz-transition: 0.5s ease-in;
+    }
+}

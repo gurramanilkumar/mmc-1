@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-lg fixed-top top-nav">
+    <div class="container">
+        <a class="navbar-brand" href="#"><strong><img src="assets/images/logo.png" width="100%" ></strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+</button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" ng-controller="HeaderController">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item " routerLink="/" routerLinkActive="active" [routerLink]="['home']" [routerLinkActiveOptions]="{ exact: true }">
+                    <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item" routerLinkActive="active" [routerLink]="['about']">
+                    <a class=" nav-link " data-toggle="collapse" data-target=".navbar-collapse.show">About</a>
+                </li>
+                <li class="nav-item" routerLinkActive="active" [routerLink]="['Services']">
+                    <a class=" nav-link " data-toggle="collapse" data-target=".navbar-collapse.show">Services</a>
+                </li>
+                <li class="nav-item" routerLinkActive="active" [routerLink]="['newMilestones']">
+                    <a class=" nav-link " data-toggle="collapse" data-target=".navbar-collapse.show">Milestones</a>
+                </li>
+                <!-- <li class=" nav-item dropdown" routerLinkActive="active">
+                    <a class=" nav-link dropdown-toggle " [routerLink]="['Services']" data-toggle="dropdown">
+                        <span class="glyphicon glyphicon-list-alt"></span>Services <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a [routerLink]="['newMilestones']">New Milestones</a></li>
+                    </ul>
+                </li> -->
+                <li class="nav-item" routerLinkActive="active" [routerLink]="['GlobalPresence']">
+                    <a class=" nav-link " data-toggle="collapse" data-target=".navbar-collapse.show">Global Presence</a>
+                </li>
+                <li class="nav-item" routerLinkActive="active" [routerLink]="['Products']">
+                    <a class=" nav-link " data-toggle="collapse" data-target=".navbar-collapse.show">Products</a>
+                </li>
+                <li class="nav-item" routerLinkActive="active" [routerLink]="['Contact']">
+                    <a class=" nav-link " data-toggle="collapse" data-target=".navbar-collapse.show">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
