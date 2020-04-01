@@ -17,16 +17,14 @@ export class CommonService implements OnInit {
   storeContactInformation(contactModel:IContactsModel)
   {
     console.log(contactModel)
-    if(!contactModel.userName){contactModel.userName = '';}
-    if(!contactModel.userEmail){contactModel.userEmail = '';}
-    if(!contactModel.subject){contactModel.subject = '';}
-    if(!contactModel.content){contactModel.content = '';}
+    // if(!contactModel.userName){contactModel.userName = '';}
+    // if(!contactModel.userEmail){contactModel.userEmail = '';}
+    // if(!contactModel.subject){contactModel.subject = '';}
+    // if(!contactModel.content){contactModel.content = '';}
     
     
-    return this.dataService.post('http://www.a3web.in/assets/ajax/contactus.php', contactModel);
-    
-  }
+    // return this.dataService.post('http://www.a3web.in/assets/ajax/contactus.php', contactModel);
+    return this._http.post('http://localhost:3000/default' ,contactModel)
   
-
-  
+}
 }
