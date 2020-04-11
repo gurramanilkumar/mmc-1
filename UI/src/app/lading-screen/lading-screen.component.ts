@@ -65,19 +65,23 @@ export class LadingScreenComponent implements OnInit {
     {
       "modelImg": "DomesticMarketing.jpg",
       "heading":"Domestic Marketing",
-      "text":"Consolidate existing business with a profitable product basket and Expansion of PAN India."
+      "text":"Consolidate existing business with a profitable product basket and Expansion of PAN India.",
+      "m-left":"ml68ps"
     },{
       "modelImg": "ContractManufacturing.jpg",
       "heading":"Contract Manufacturing",
-      "text":"Superior edge over our competitors due to resources including Technically Knowledgeable workforce and WHO-GMP approved Production premises."
+      "text":"Superior edge over our competitors due to resources including Technically Knowledgeable workforce and WHO-GMP approved Production premises.",
+      "m-left":"ml68ps"
     },{
       "modelImg": "InternationalMarketing.jpg",
       "heading":"International Marketing",
-      "text":"Exports higher volumes to Regulated markets and to Africa, CIS Rest of the World markets."
+      "text":"Exports higher volumes to Regulated markets and to Africa, CIS Rest of the World markets.",
+      "m-left":"ml68ps"
     },{
       "modelImg": "FormulationR&D.jpg",
       "heading":"Formulation R&D and NDDS Development",
-      "text":"Focus on Researching New molecules and Products having high margins with NDDS."
+      "text":"Focus on Researching New molecules and Products having high margins with NDDS.",
+      "m-left":"ml68ps"
     },
   ];
   SnapshotGroup: any []=[

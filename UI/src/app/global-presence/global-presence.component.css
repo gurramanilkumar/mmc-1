@@ -174,21 +174,33 @@
 }
 
 .movie-card.asia {
-    background-image: url("../../assets/images/ASIA.png");
+    background-image: url("../../assets/images/ASIA.jpg");
 }
 
 .movie-card.africa {
-    background-image: url("../../assets/images/AFRICA.jpg");
+    background-image: url("../../assets/images/africa.jpg");
 }
 
 .asiaBox {
-    background-image: url("../../assets/images/ASIA.png");
+    background-image: url("../../assets/images/ASIA.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .africaBox {
-    background-image: url("../../assets/images/AFRICA.jpg");
+    background-image: url("../../assets/images/africa.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cisBox {
+    background-image: url("../../assets/images/cis.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.otherBox {
+    background-image: url("../../assets/images/usa.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }

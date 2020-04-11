@@ -57,48 +57,50 @@
                         <h4 class="text-uppercase mb-5">Drop Us a Message</h4>
                     </div>
                     <div class="container contact-form">
-                        <form  #form="ngForm" (ngSubmit)="logForm(form.value)" id="myForm">
+                        <form #form="ngForm" (ngSubmit)="logForm(form.value)" id="myForm">
                             <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                <select name="duration" [(ngModel)]="duration" required class="form-control">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <select name="duration" [(ngModel)]="duration" required class="form-control">
                                 <option value="">Select</option>
-                                <option name="duration" value="anveshpallamreddy@gmail.com">Monday</option>
-                                <option name="duration" value="gurramanilkumar@gmail.com">Tuesday</option>
-                                <option name="duration" value="Wednesday3">Wednesday</option>
-                                <option name="duration" value="Thursday4">Thursday</option>
-                                <option name="duration" value="Friday5">Friday</option>
+                                <!-- <option name="duration" value="gurramanilkumar@gmail.com">Test Email</option> -->
+                                <option value="purchase@mmchealthcareltd.com">Purchase</option>
+                                <option value="cms@mmchealthcareltd.com">CMS</option>
+                                <option value="dgm.operations@mmchealthcareltd.com">General</option>
+                                <option value="exports@mmchealthcareltd.com">Exports </option>
+                                <option value="hr@surakshapharma.in">HR</option>
+                                
                                 </select>
-                            </div>
+                                    </div>
 
-                                <div class="form-group">
-                                    <input id="userName" name="userName" type="text" class="form-control" [(ngModel)]="userName" placeholder="Name *" required/>
-                                </div>
-                                <div class="form-group">
-                                    <input id="userEmail" name="userEmail" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"  title="Invalid email address" [(ngModel)]="userEmail" class="form-control" placeholder="Email *" required/>
-                                </div>
-                                <div class="form-group">
-                                    <input id="phoneNo" name="phoneNo" type="number" maxlength="10"  [(ngModel)]="phoneNo" class="form-control" placeholder="Mobile Number"/>
-                                </div>
-                                <div class="form-group">
-                                    <input id="subject" name="subject" type="text" [(ngModel)]="subject" class="form-control" placeholder="Subject *" required/>
-                                </div>
-                                <div class="form-group">
-                                    <textarea id="content" name="Message" [(ngModel)]="Message" class="form-control" placeholder="Message *" required></textarea>
-                                </div>
-                                <div *ngIf="dangerAlert" class="alert alert-danger " role="alert">
-                                    <strong>{{successMessage}}</strong> 
-                                  </div>
-                                  <div *ngIf="succesAlert" class="alert alert-success" role="alert">
-                                    <strong>{{successMessage}}</strong> 
-                                  </div>
+                                    <div class="form-group">
+                                        <input id="userName" name="userName" type="text" class="form-control" [(ngModel)]="userName" placeholder="Name *" required/>
+                                    </div>
+                                    <div class="form-group">
+                                        <input id="userEmail" name="userEmail" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" title="Invalid email address" [(ngModel)]="userEmail" class="form-control" placeholder="Email *" required/>
+                                    </div>
+                                    <div class="form-group">
+                                        <input id="phoneNo" name="phoneNo" type="number" maxlength="10" [(ngModel)]="phoneNo" class="form-control" placeholder="Mobile Number" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input id="subject" name="subject" type="text" [(ngModel)]="subject" class="form-control" placeholder="Subject *" required/>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea id="content" name="Message" [(ngModel)]="Message" class="form-control" placeholder="Message *" required></textarea>
+                                    </div>
+                                    <div *ngIf="dangerAlert" class="alert alert-danger " role="alert">
+                                        <strong>{{successMessage}}</strong>
+                                    </div>
+                                    <div *ngIf="succesAlert" class="alert alert-success" role="alert">
+                                        <strong>{{successMessage}}</strong>
+                                    </div>
 
-                                <div class="form-group text-center">
-                                    <button class="btn btn-yellow btn-block">Send Message</button>
+                                    <div class="form-group text-center">
+                                        <button class="btn btn-primary btn-block">Send Message</button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </form>
+                        </form>
                     </div>
                 </div>
             </div>

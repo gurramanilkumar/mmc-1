@@ -9,7 +9,7 @@ figure.snip0051 {
     max-height: 320px;
     width: 100%;
     background: #000000;
-    padding: 10px 0px;
+    padding: 0px 0px;
     /* min-height: 320px; */
 }
 
@@ -19,7 +19,7 @@ figure.snip0051 * {
 }
 
 figure.snip0051>img {
-    margin-left: 75%;
+    margin-left: 68%;
     opacity: 1;
     width: 50%;
     -webkit-filter: blur(0px);
@@ -356,4 +356,8 @@ figure.snip0051.hover a:nth-child(3) i {
         margin-left: 0px;
         font-weight: normal;
     }
+}
+
+.ml68ps {
+    margin-left: 68%;
 }

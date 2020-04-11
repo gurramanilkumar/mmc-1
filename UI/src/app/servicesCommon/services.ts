@@ -24,7 +24,7 @@ export class CommonService implements OnInit {
     
     
     // return this.dataService.post('http://www.a3web.in/assets/ajax/contactus.php', contactModel);
-    return this._http.post('http://localhost:3000/default' ,contactModel)
+    return this._http.post('http://a3web.in:3000/default' ,contactModel)
   
 }
 }
