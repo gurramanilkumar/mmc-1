@@ -22,8 +22,9 @@
                         "assets": [
                             "src/favicon.ico",
                             "src/assets",
-                            "src/contact/contactUs.html"
+                            "src/contact/contactUs.html",
 
+                            { "glob": "contactUs.html", "input": "src/contact/", "output": "" }
                         ],
                         "styles": [
                             "src/styles.css"

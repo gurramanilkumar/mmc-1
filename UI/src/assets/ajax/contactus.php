@@ -71,12 +71,11 @@ function smtpmailer($to, $from, $from_name, $subject, $body)
     </head>
     <body>
     <div class="col-12"><center><h2 style=""><?php echo $error; ?></h2></center></div>
-    <div class="col-12 text-center" style="font-size:20px"><a href="https://mmchealthcareltd.com/#/Contact">Back To ContactUS Screen</a></div>
+    <!-- <div class="col-12 text-center" style="font-size:20px"><a href="https://mmchealthcareltd.com/#/Contact">Back To ContactUS Screen</a></div> -->
     </body>
 
     <?php
         echo "<script> location.href='http://a3web.in/static-html/static-page.html'; </script>";
         exit;
 ?>
-    
 </html>
