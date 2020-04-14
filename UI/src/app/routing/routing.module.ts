@@ -21,7 +21,7 @@ import { MilestonesComponent } from '../milestones/milestones.component';
     { path: 'Services', component: ServicesComponent, pathMatch: 'full' },
     { path: 'GlobalPresence', component: GlobalPresenceComponent, pathMatch: 'full' },
     { path: 'Products', component: ProductsComponent, pathMatch: 'full' },
-    { path: 'Contact', component: ContactComponent, pathMatch: 'full' },
+    //{ path: 'Contact', component: ContactComponent, pathMatch: 'full' },
     { path: 'newMilestones', component: MilestonesComponent, pathMatch: 'full' },
 
     
